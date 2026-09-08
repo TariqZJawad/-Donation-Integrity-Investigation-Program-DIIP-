@@ -46,6 +46,7 @@ The analysis transitioned to **Apache Superset** to build an interactive dashboa
 *   **Economic Status vs. Total Funding (Scatter Plot):** Proves that funding is often randomly distributed, ignoring the actual GDP of recipient nations.
 ![economic status vs total project funding by country](economic-status-vs-total-project-funding-by-country.jpg)
 *   **Average Financial Efficiency (Bar Chart):** Exposes organizations with astronomical administrative overhead ratios absorbing donation funds.
+![preview](average-financial-efficiency-by-organizations.jpg)
 *   **Breakdown of Suspicion Metrics (Donut Chart):** Reveals manipulation tactics, primarily "Fragmentation" (61.34%) and "Smurfing" (36.93%).
 *   **Project Title Keywords (Word Cloud):** Utilizes `to_tsvector` to extract vague and repetitive terms used to obscure project deliverables.
 *   **Geographical Risk (Deck.gl Map):** Spatially tracks high-risk transactions to pinpoint geographical hubs of financial vulnerability.
