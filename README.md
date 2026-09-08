@@ -40,11 +40,9 @@ Data transformation and processing were handled entirely within PostgreSQL via t
 ### 4️⃣ Analyze (Visualization & Storytelling)
 The analysis transitioned to **Apache Superset** to build an interactive dashboard that tells an investigative data story.
 
-![DIIP Dashboard](1000467391_2.jpg)
-
 **Key Investigative Visualizations:**
 *   **Commitments vs. Disbursements (Bar Chart):** Highlights the massive gap between billions pledged and millions disbursed.
-!(commitments-vs-disbursements-by-country.jpg)
+![commitments vs disbursements by country](commitments-vs-disbursements-by-country.jpg)
 *   **Economic Status vs. Total Funding (Scatter Plot):** Proves that funding is often randomly distributed, ignoring the actual GDP of recipient nations.
 *   **Average Financial Efficiency (Bar Chart):** Exposes organizations with astronomical administrative overhead ratios absorbing donation funds.
 *   **Breakdown of Suspicion Metrics (Donut Chart):** Reveals manipulation tactics, primarily "Fragmentation" (61.34%) and "Smurfing" (36.93%).
