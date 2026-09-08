@@ -59,7 +59,14 @@ The analysis transitioned to **Apache Superset** to build an interactive dashboa
 *   **Cloud Hosting Constraints:** Encountered "403 Forbidden" errors when attempting to host Superset via Docker on platforms like Preset and Hugging Face. Shifted to a robust, Code-First Reproducible approach instead of a live server.
 *   **Geospatial Complexity:** Handled thousands of incomplete geographic coordinates (Lat/Lon) and filtered them using PostgreSQL to render an accurate Deck.gl spatial map.
 *   **API Timeouts:** Faced unstable responses from the World Bank API, which was mitigated by engineering a robust retry mechanism and extended timeouts in Python.
+## ⚠️ Known Limitations & Data Caveats
 
+While reviewing the pipeline, I identified two data-quality issues worth disclosing transparently rather than hiding:
+
+- **Commitments/Disbursements aggregation:** The query behind the headline "$6.22B Commitments vs. $1.23M Disbursements" figure uses `SUM(DISTINCT total_commitments)` / `SUM(DISTINCT total_disbursements)`. Using `DISTINCT` here can silently drop legitimate rows that happen to share the same amount, which may understate the true totals on both sides. The reported gap should be treated as directionally indicative rather than a precise figure until this is corrected.
+- **Transaction–location join:** `transactions` are joined to `raw_locations` on `project_id` alone, without also matching on `project_location_id`. For projects with multiple recorded locations, this can associate a transaction with more than one site, which may inflate the geographic **dispersion** sub-score in the risk engine for some projects.
+
+Both issues are on the roadmap to fix; they don't invalidate the overall pipeline or approach, but the exact magnitude of the reported financial gap and dispersion scores should be interpreted with this in mind.
 ---
 
 ## 🌟 Features & Strengths
