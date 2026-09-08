@@ -28,6 +28,8 @@ Data preparation was executed in 5 foundational stages to build the Data Warehou
 4.  **Suspicious Projects Registry:** Built a dedicated table to evaluate and score projects based on anomaly indicators.
 5.  **Metadata Documentation (`db_schema`):** Created a comprehensive inventory table mapping the full database schema and data types.
 
+![Database Schema](db_schema.png)
+
 ### 3️⃣ Process (Transformation & Scoring)
 Data transformation and processing were handled entirely within PostgreSQL via the `DIIP.sql` script:
 *   **Data Cleaning:** Applied `TRIM()` across all textual columns to resolve whitespace inconsistencies.
