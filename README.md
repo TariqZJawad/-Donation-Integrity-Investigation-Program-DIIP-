@@ -50,6 +50,7 @@ The analysis transitioned to **Apache Superset** to build an interactive dashboa
 *   **Breakdown of Suspicion Metrics (Donut Chart):** Reveals manipulation tactics, primarily "Fragmentation" (61.34%) and "Smurfing" (36.93%).
 ![preview](average-breackdown-of-suspicion-metrics.jpg)
 *   **Project Title Keywords (Word Cloud):** Utilizes `to_tsvector` to extract vague and repetitive terms used to obscure project deliverables.
+![previes](project-title-keyword-word-cloud-2026.jpg)
 *   **Geographical Risk (Deck.gl Map):** Spatially tracks high-risk transactions to pinpoint geographical hubs of financial vulnerability.
 
 ---
