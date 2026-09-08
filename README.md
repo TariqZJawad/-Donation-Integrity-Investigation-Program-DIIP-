@@ -52,7 +52,7 @@ The analysis transitioned to **Apache Superset** to build an interactive dashboa
 *   **Project Title Keywords (Word Cloud):** Utilizes `to_tsvector` to extract vague and repetitive terms used to obscure project deliverables.
 ![previes](project-title-keyword-word-cloud-2026.jpg)
 *   **Geographical Risk (Deck.gl Map):** Spatially tracks high-risk transactions to pinpoint geographical hubs of financial vulnerability.
-
+![preview](geographical_disribution.png)
 ---
 
 ## 🚧 Roadblocks & Challenges
