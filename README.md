@@ -48,6 +48,7 @@ The analysis transitioned to **Apache Superset** to build an interactive dashboa
 *   **Average Financial Efficiency (Bar Chart):** Exposes organizations with astronomical administrative overhead ratios absorbing donation funds.
 ![preview](average-financial-efficiency-by-organizations.jpg)
 *   **Breakdown of Suspicion Metrics (Donut Chart):** Reveals manipulation tactics, primarily "Fragmentation" (61.34%) and "Smurfing" (36.93%).
+![preview](average-breackdown-of-suspicion-metrics.jpg)
 *   **Project Title Keywords (Word Cloud):** Utilizes `to_tsvector` to extract vague and repetitive terms used to obscure project deliverables.
 *   **Geographical Risk (Deck.gl Map):** Spatially tracks high-risk transactions to pinpoint geographical hubs of financial vulnerability.
 
